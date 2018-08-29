@@ -1,0 +1,43 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "paule96",
+    "classifications": [ "Console", "Empty" ], 
+    "name": "Git ignore",
+    "identity": "paule96.DotNetTemplate.GitIgnore",         
+    "groupIdentity":"paule96.DotNetTemplate",
+    "shortName": "ignore",
+    "tags": {
+      "language": "txt",
+      "type":"gitignore"
+    },
+    "preferNameDirectory":true,
+    "symbols": {
+        "ignoreName": {
+            "type": "parameter",
+            "datatype": "choice",
+            "choices": [
+                {
+                    "choice": "VisualStudio",
+                    "description": "c# gitignore"
+                },
+                {
+                    "choice": "Ada",
+                    "description": "Ada gitignore"
+                }
+            ],
+            "description": "The name of the gitignore file from https://github.com/github/gitignore",
+            "isRequired": true
+        }
+    },
+    "sources":[{
+        "source": "./",
+        "target": "./",
+        "include": [
+            "VisualStudio.gitignore"
+        ],
+        "rename": {
+            "VisualStudio.gitignore": ".gitignore"
+        },
+        "condition": "(ignoreName) == VisualStudio"
+    }]
+  }
