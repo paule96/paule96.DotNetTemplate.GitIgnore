@@ -6,12 +6,12 @@
 
 $commitUrl = "https://api.github.com/repos/github/gitignore/commits";
 
-$response = Invoke-WebRequest -Uri $commitUrl;
+$response = Invoke-WebRequest -Uri $commitUrl -UseBasicParsing;
 
 $filelistUri = (ConvertFrom-Json $response.Content)[0].commit.tree.url;
 
 
-$response = Invoke-WebRequest -Uri $filelistUri;
+$response = Invoke-WebRequest -Uri $filelistUri -UseBasicParsing;
 
 $filelist = ConvertFrom-Json $response.Content;
 
