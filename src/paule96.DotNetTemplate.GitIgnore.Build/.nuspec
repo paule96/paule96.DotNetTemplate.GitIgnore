@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+    <metadata>
+        <!-- The identifier that must be unique within the hosting gallery -->
+        <id>paule96.DotNetTemplate.GitIgnore</id>
+
+        <!-- The package version number that is used when resolving dependencies -->
+        <!-- This is set by the release pipeline -->
+        <version>0.0.0</version>
+
+        <!-- Authors contain text that appears directly on the gallery -->
+        <authors>paule96</authors>
+
+        <!-- 
+            Owners are typically nuget.org identities that allow gallery
+            users to easily find other packages by the same owners.  
+        -->
+        <owners>community of the world :)</owners>
+
+         <!-- License and project URLs provide links for the gallery -->
+        <licenseUrl>https://github.com/paule96/paule96.DotNetTemplate.GitIgnore/blob/master/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/paule96/paule96.DotNetTemplate.GitIgnore</projectUrl>
+
+        <!-- The icon is used in Visual Studio's package manager UI -->
+        <iconUrl>http://github.com/contoso/UsefulStuff/nuget_icon.png</iconUrl>
+
+        <!-- 
+            If true, this value prompts the user to accept the license when
+            installing the package. 
+        -->
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+
+        <!-- Any details about this particular release -->
+        <releaseNotes>now you can create .gitignore in your folders.</releaseNotes>
+
+        <!-- 
+            The description can be used in package manager UI. Note that the
+            nuget.org gallery uses information you add in the portal. 
+        -->
+        <description>With this dotnet new Template you can add .gitignore to your project.</description>
+
+        <!-- Copyright information -->
+        <copyright>Copyright (c) 2018 paule96</copyright>
+
+        <!-- Tags appear in the gallery and can be used for tag searches -->
+        <tags>git gitignore dotnet template new</tags>              
+        <packageTypes>
+            <packageType name="Template" />
+        </packageTypes>
+    </metadata>
+    <files>
+        <file src="bin\**\*.*" target="" />
+    </files>
+</package>
