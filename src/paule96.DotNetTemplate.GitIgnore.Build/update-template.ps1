@@ -35,7 +35,7 @@ $filelist.tree | Where-Object {
     $rawuri = $baserawurl + $_.path;
     $filename = $_.path;
     $outputfile = $PWD.Path + "\\bin\\paule96.DotNetTemplate.GitIgnore\\" + $_.path;
-    Invoke-WebRequest -Uri $rawuri  -OutFile $outputfile;
+    Invoke-WebRequest -Uri $rawuri  -OutFile $outputfile -UseBasicParsing;
     $parameterName = $_.path.Replace(".gitignore", "");
     $choices.Add(@{"choice" = "$parameterName"; "description" = ""}) > $null;
     $sources.Add(@{
