@@ -6,6 +6,21 @@ With this dotnet new Template you can add .gitignore to your project. the .gitig
 |:-----------------:|:---------------:|:----------------:|
 |[![Build status](https://paule96.visualstudio.com/paule96.DotNetTemplate.GitIgnore/_apis/build/status/paule96.DotNetTemplate.GitIgnore-CI)](https://paule96.visualstudio.com/paule96.DotNetTemplate.GitIgnore/_build/latest?definitionId=1) | [![Build status](https://paule96.visualstudio.com/paule96.DotNetTemplate.GitIgnore/_apis/build/status/Update%20gitignores%20in%20paule96.DotNetTemplate.GitIgnore)](https://paule96.visualstudio.com/paule96.DotNetTemplate.GitIgnore/_build/latest?definitionId=2) | ![Release Status to nuget.org](https://paule96.vsrm.visualstudio.com/_apis/public/Release/badge/26b61fe6-be56-4f0b-94c3-2c001318f7a5/1/2)
 
+## Install and Run the Template
+
+1. install the template on your system
+```bash
+dotnet new -i paule96.DotNetTemplate.GitIgnore
+```
+2. run the help to see what gitignore files you can create
+```bash
+dotnet new ignore --help
+```
+3. create your gitignore file
+```bash
+dotnet new ignore -ig VisualStudio
+```
+
 ## Build the template
 
 1. Open this project in [VSCode](https://code.visualstudio.com/) and run the "Build Template" command from the launch.json.
