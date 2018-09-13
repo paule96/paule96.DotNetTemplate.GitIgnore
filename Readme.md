@@ -5,8 +5,8 @@
 
 .NET Core template which adds [.gitgnore](https://github.com/github/gitignore) files to your project.
 
-|Template Build|.gitignore Updates|Nuget.org Release|
-| :----------: | :--------------: | :-------------: |
+|                                                                                                               Template Build                                                                                                                |                                                                                                                         .gitignore Updates                                                                                                                          |                                                             Nuget.org Release                                                             |
+| :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------: |
 | [![Build status](https://paule96.visualstudio.com/paule96.DotNetTemplate.GitIgnore/_apis/build/status/paule96.DotNetTemplate.GitIgnore-CI)](https://paule96.visualstudio.com/paule96.DotNetTemplate.GitIgnore/_build/latest?definitionId=1) | [![Build status](https://paule96.visualstudio.com/paule96.DotNetTemplate.GitIgnore/_apis/build/status/Update%20gitignores%20in%20paule96.DotNetTemplate.GitIgnore)](https://paule96.visualstudio.com/paule96.DotNetTemplate.GitIgnore/_build/latest?definitionId=2) | ![Release Status to nuget.org](https://paule96.vsrm.visualstudio.com/_apis/public/Release/badge/26b61fe6-be56-4f0b-94c3-2c001318f7a5/1/2) |
 
 ## Getting Started
@@ -15,19 +15,17 @@
 
 To use the template you need to install the corresponding NuGet package on your system.
 
-1. Install the template on your system
-
 ```bash
-dotnet new --install paule96.DotNetTemplate.GitIgnore
+dotnet new -i paule96.DotNetTemplate.GitIgnore
 ```
 
-2. Get a list of available .gitignore templates
+1. Get a list of available .gitignore templates
 
 ```bash
 dotnet new ignore --help
 ```
 
-3. Add .gitignore to your project (where -ig is the gitignore file of your choice)
+2. Add .gitignore to your project (where -ig is the gitignore file of your choice)
 
 ```bash
 dotnet new ignore -ig VisualStudio
